@@ -67,7 +67,7 @@ defaults write com.apple.dock show-recents -bool false
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # System Preferences > Keyboard >
-defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain KeyRepeat -int 1.5
 
 # System Preferences > Keyboard >
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
