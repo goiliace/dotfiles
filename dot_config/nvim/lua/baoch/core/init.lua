@@ -1,2 +1,2 @@
-require("josean.core.keymaps")
-require("josean.core.options")
+require("baoch.core.keymaps")
+require("baoch.core.options")
