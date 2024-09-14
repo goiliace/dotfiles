@@ -42,7 +42,7 @@ echo "Installing chezmoi..."
 brew install chezmoi
 if [ ! -f "$HOME/.config/chezmoi/chezmoi.toml" ]; then
   echo "Applying chezmoi ..."
-  chezmoi init --apply --verbose https://github.com/nartc/dotfiles.git
+  chezmoi init --apply --verbose https://github.com/baoch254/dotfiles.git
   chmod 0600 "$HOME/.config/chezmoi/chezmoi.toml"
 fi
 
