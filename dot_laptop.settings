@@ -3,16 +3,14 @@
 set -e
 
 # Creating Folders
-if ! [[ -d "~/code" ]]
-then
-    mkdir ~/code
-    mkdir ~/code/github
-    mkdir ~/code/sandbox
+if ! [[ -d "~/code" ]]; then
+  mkdir ~/code
+  mkdir ~/code/github
+  mkdir ~/code/sandbox
 fi
 
-if ! [[ -d "~/Desktop/screenshots" ]]
-then
-    mkdir ~/Desktop/screenshots
+if ! [[ -d "~/Desktop/screenshots" ]]; then
+  mkdir ~/Desktop/screenshots
 fi
 
 # macos settings
@@ -21,7 +19,11 @@ fi
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+while true; do
+  sudo -n true
+  sleep 60
+  kill -0 "$$" || exit
+done 2>/dev/null &
 
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
@@ -117,9 +119,8 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 defaults write com.apple.screencapture location ~/Desktop/screenshots && killall SystemUIServer
 
 # Kill affected apps
-for app in "Dock" "Finder"
-do
-    killall "${app}" >/dev/null 2>&1
+for app in "Dock" "Finder"; do
+  killall "${app}" >/dev/null 2>&1
 done
 
 # Done

@@ -3,25 +3,23 @@
 set -e
 
 # ------ Mac OS Settings ------
-if ! [[ -f ".laptop.settings" ]]
-then
-    echo "Downloading .laptop.settings ..."
-    curl --remote-name https://raw.githubusercontent.com/baoch254/dotfiles/main/dot_laptop.settings
-    mv dot_laptop.settings .laptop.settings
-    chmod +x .laptop.settings
-    echo "Executing .laptop.settings ..."
-    zsh .laptop.settings
+if ! [[ -f ".laptop.settings" ]]; then
+  echo "Downloading .laptop.settings ..."
+  curl --remote-name https://raw.githubusercontent.com/nartc/dotfiles/main/dot_laptop.settings
+  mv dot_laptop.settings .laptop.settings
+  chmod +x .laptop.settings
+  echo "Executing .laptop.settings ..."
+  zsh .laptop.settings
 fi
 # ------ End: Mac OS Settings ------
 
 # ------ Dev Environment ------
-if ! [[ -f ".laptop.devenv" ]]
-then
-    echo "Downloading .laptop.devenv ..."
-    curl --remote-name https://raw.githubusercontent.com/baoch254/dotfiles/main/dot_laptop.devenv
-    mv dot_laptop.devenv .laptop.devenv
-    chmod +x .laptop.devenv
-    echo "Executing .laptop.devenv ..."
-    zsh .laptop.devenv
+if ! [[ -f ".laptop.devenv" ]]; then
+  echo "Downloading .laptop.devenv ..."
+  curl --remote-name https://raw.githubusercontent.com/nartc/dotfiles/main/dot_laptop.devenv
+  mv dot_laptop.devenv .laptop.devenv
+  chmod +x .laptop.devenv
+  echo "Executing .laptop.devenv ..."
+  zsh .laptop.devenv
 fi
 # ------ End: Dev Environment ------
