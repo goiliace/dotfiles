@@ -3,11 +3,11 @@
 set -e
 
 # Creating Folders
-if ! [[ -d "~/code" ]]; then
-  mkdir ~/code
-  mkdir ~/code/github
-  mkdir ~/code/sandbox
-fi
+# if ! [[ -d "~/code" ]]; then
+#   mkdir ~/code
+#   mkdir ~/code/github
+#   mkdir ~/code/sandbox
+# fi
 
 if ! [[ -d "~/Desktop/screenshots" ]]; then
   mkdir ~/Desktop/screenshots
