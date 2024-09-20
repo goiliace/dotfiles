@@ -118,10 +118,6 @@ alias lzd="lazydocker"
 alias t="tmux"
 alias vvc="vi ~/.config/nvim/"
 alias vac="vi ~/.config/alacritty/"
-alias note="cd /Users/briancao/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/notes/ && vi ."
-alias cdisk="smartctl -a disk0"
-alias code="cd ~/code"
-alias codoo="cd ~/code/github/odoo/"
 
 # ZOXIDE
 eval "$(zoxide init zsh)"
