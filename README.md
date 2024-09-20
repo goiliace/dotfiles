@@ -3,7 +3,7 @@
 ### Download .laptop.local
 
 ```bash
-curl --remote-name https://raw.githubusercontent.com/baoch254/dotfiles/main/dot_laptop.local
+curl --remote-name https://raw.githubusercontent.com/goiliace/dotfiles/main/dot_laptop.local
 mv dot_laptop.local .laptop.local
 chmod +x .laptop.local
 zsh .laptop.local
